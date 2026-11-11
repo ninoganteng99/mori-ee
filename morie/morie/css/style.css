@@ -1,0 +1,371 @@
+/* Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #F5E8C5;
+    color: #536744;
+}
+
+/* Navbar */
+.navbar-morie {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(120deg, #354B32, #536744, #718568);
+    color: #F6F0DF;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #F6F0DF;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #E8D8A8;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    min-height: 660px;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-position: top 45%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    padding: 10px 15px 5px;
+}
+
+.banner-content {
+    text-align: center;
+    padding: 0;
+    transform: translateY(25px);
+}
+
+.banner-content h1,
+.banner-content p {
+    display: none;
+}
+
+/* Sambutan */
+.sambutan {
+    text-align: center;
+    padding: 55px 20px;
+    background: #F6F0DF;
+    margin: 0;
+}
+
+.sambutan h2 {
+    font-size: 30px;
+    color: #536744;
+    margin-bottom: 12px;
+}
+
+.sambutan p {
+    color: #8B795E;
+    font-size: 16px;
+}
+
+/* Katalog Menu */
+.katalog {
+    max-width: 100%;
+    padding: 45px 7% 60px;
+    background-image:
+        linear-gradient(rgba(246, 240, 223, 0.85), rgba(246, 240, 223, 0.85)),
+        url("../assets/background2.jpeg");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: repeat-y;
+    margin: 0;
+}
+
+
+.katalog h2 {
+    text-align: center;
+    color: #536744;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.deskripsi {
+    text-align: center;
+    color: #8B795E;
+    margin-bottom: 25px;
+}
+
+/* Tombol Kategori */
+.kategori {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.btn-kategori {
+    border: 1px solid #536744;
+    background: #FFFDF5;
+    color: #536744;
+    padding: 9px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    transition: 0.3s;
+}
+
+.btn-kategori:hover,
+.btn-kategori.active {
+    background: #536744;
+    color: #FFFDF5;
+}
+
+/* Daftar Menu */
+#daftar-menu {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Card Menu */
+.menu-card {
+    height: 100%;
+    background: #FFFDF5;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar Menu */
+.menu-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Isi Card */
+.menu-info {
+    padding: 18px;
+}
+
+/* Label Kategori */
+.label-menu {
+    display: inline-block;
+    background: #E4EBD9;
+    color: #536744;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Nama Menu */
+.menu-info h5 {
+    color: #536744;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Deskripsi Menu */
+.menu-info p {
+    color: #8B795E;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* Harga Menu */
+.menu-info h6 {
+    color: #A66A3F;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer-custom {
+    width: 100%;
+    background: linear-gradient(120deg, #354B32, #536744, #718568);
+    color: #F6F0DF;
+    padding: 45px 0 20px;
+    margin: 0;
+}
+
+.footer-custom h5 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-custom h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-custom p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-custom ul li {
+    margin-bottom: 10px;
+}
+
+.footer-custom a {
+    color: #F6F0DF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-custom a:hover {
+    color: #E8D8A8;
+}
+
+.footer-custom hr {
+    border-color: #F6F0DF;
+    opacity: 0.4;
+}
+
+.footer-custom .copyright {
+    text-align: center;
+    margin: 15px 0 0;
+    font-size: 13px;
+}
+
+/* Animasi Kelopak Bunga */
+.petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.petal {
+    position: absolute;
+    top: -30px;
+    color: #F2B7B9;
+    font-size: 20px;
+    animation: jatuh 8s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes jatuh {
+    0% {
+        transform: translateY(-30px) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Tampilan Tablet dan HP */
+@media (max-width: 768px) {
+    .navbar-morie {
+        padding: 15px 5%;
+    }
+
+    .banner {
+        min-height: 400px;
+        background-position: center;
+    }
+
+    .sambutan h2,
+    .katalog h2 {
+        font-size: 25px;
+    }
+
+    .katalog {
+        padding: 35px 5% 45px;
+    }
+
+    #daftar-menu {
+        max-width: 100%;
+    }
+
+    .menu-card img {
+        height: 160px;
+    }
+
+    .menu-info {
+        padding: 12px;
+    }
+
+    .menu-info h5 {
+        font-size: 16px;
+    }
+
+    .menu-info p {
+        font-size: 12px;
+    }
+}
+/* Menambahkan efek pointer dan transisi dasar pada kartu menu */
+.menu-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek saat kartu di-hover (diarahkan mouse) */
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Animasi saat kartu diklik */
+@keyframes klikKartu {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); }
+    100% { transform: scale(1); }
+}
+
+.animasi-klik {
+    animation: klikKartu 0.3s ease;
+}
+
+/* Animasi muncul (fade & scale) saat filter kategori dipilih */
+@keyframes muncul {
+    0% { opacity: 0; transform: scale(0.8) translateY(20px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animasi-muncul {
+    animation: muncul 0.5s ease forwards;
+}
